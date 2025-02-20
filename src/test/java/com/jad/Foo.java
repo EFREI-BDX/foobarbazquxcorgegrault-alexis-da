@@ -10,10 +10,9 @@ public class Foo {
         return this.bar;
     }
 
-    private Baz baz;
 
-    public Baz getBaz() {
-        return this.baz;
+    public ArrayList<Baz> getBazs() {
+        return this.bazs;
     }
 
     private ArrayList<Baz> bazs;
@@ -38,6 +37,18 @@ public class Foo {
 
     public ArrayList<Grault> getGraults() {
         return this.graults;
+    }
+
+    public Foo(Bar bar) {
+        this.bar = bar;
+    }
+
+    public void addBaz(Baz baz) {
+        this.bazs.add(baz);
+    }
+
+    public void addGrault(Grault grault) {
+        this.graults.add(grault);
     }
 
 

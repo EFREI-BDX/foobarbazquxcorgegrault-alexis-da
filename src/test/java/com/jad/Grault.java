@@ -8,6 +8,6 @@ public class Grault {
     }
 
     public Grault(Foo foo) {
-
+        this.foo = foo;
     }
 }
