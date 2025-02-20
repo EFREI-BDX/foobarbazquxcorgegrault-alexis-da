@@ -10,8 +10,35 @@ public class Foo {
         return this.bar;
     }
 
+    private Baz baz;
+
+    public Baz getBaz() {
+        return this.baz;
+    }
+
     private ArrayList<Baz> bazs;
+
     private Qux qux;
+
+    public Qux getQux() {
+        return this.qux;
+    }
+
     private Corge corge;
+
+    public Corge getCorge() {
+        return this.corge;
+    }
+
+    public void setCorge(Corge corge) {
+        this.corge = corge;
+    }
+
     private ArrayList<Grault> graults;
+
+    public ArrayList<Grault> getGraults() {
+        return this.graults;
+    }
+
+
 }
